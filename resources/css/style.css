@@ -2,7 +2,11 @@
 
 /* commento */
 
+* {
+  margin: 0;
+  padding: 0;
 
+}
 
 
 .header {
@@ -10,10 +14,14 @@
   font-family: Verdana;
   font-size: 14px;
   font-weight: bold;
-  justify-content: space-around;
-  border-bottom: 1px solid black;
-  padding-bottom: 20px;
+  justify-content: space-between;
   align-items: center;
+  z-index: 1;
+  border-bottom: 1px solid black;
+  height: 80px;
+  width: 100%;
+  position: fixed;
+  background-color: white;
 }
 
 .logo h4 {
@@ -25,9 +33,157 @@
 .logo {
   align-items: center;
   display: flex;
+  padding-left: 40px;
 }
 
 .navlink{
   padding: 8px;
   font-size: 14px;
+}
+
+.nav{
+  padding-right: 40px;
+}
+
+.container {
+  display: flex;
+  flex-direction: row;
+  justify-content:  space-around;
+  padding-top: 100px;
+}
+
+.column {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.large {
+  flex-basis:  630px;
+}
+
+.medium {
+  flex-basis:  300px;
+}
+
+.small {
+  flex-basis:  240px;
+}
+
+.main {
+  display: flex;
+  flex-direction: column;
+
+}
+
+
+.img-title {
+  display: flex;
+  font-family: Georgia;
+  font-weight: bold;
+  font-size: 30px;
+  color: white;
+  padding: 0 40px 40px 40px;
+  text-align: center;
+  align-items: center;
+
+}
+
+.main .img-title {
+  background-image: url("../img/img-story-main.png");
+  font-size: 40px;
+}
+
+
+.img1 {
+  background-image: url("../img/img-story-1.png");
+  height: 300px;
+  background-repeat: no-repeat;
+}
+
+.img2 {
+  background-image: url("../img/img-story-2.png");
+  height: 300px;
+  background-repeat: no-repeat;
+
+}
+
+.img3 {
+  background-image: url("../img/img-story-3.png");
+  height: 300px;
+  background-repeat: no-repeat;
+
+
+}
+
+.secondary {
+  display: flex;
+  flex-direction: row;
+}
+
+.article {
+  display: flex;
+  flex-direction: column;
+  font-family: Georgia;
+  font-size: 17px;
+  color: black;
+  justify-content: flex-start;
+}
+
+.news-bites {
+  display:flex;
+  flex-direction: column;
+}
+
+.news-bites h2{
+  font-size: 16px;
+ font-weight: bold;
+ margin: 0 auto;
+ padding-bottom: 40px;
+
+
+}
+
+.bite {
+  margin: 0;
+  border-top: 1px solid black;
+  border-bottom: 1px solid black;
+  background-color: WhiteSmoke;
+  font-family: Verdana;
+  font-size: 12px;
+  color: DimGray;
+  padding: 20px;
+}
+
+.footer {
+  display: flex;
+  flex-direction: column;
+  background-color: MediumAquamarine;
+  margin: auto;
+  font-family: Verdana;
+  font-size: 12px;
+  align-items: center;
+  height: 300px;
+  justify-content: center;
+  
+}
+
+.footer-nav {
+  display: flex;
+  align-items: center;
+  padding:20px;
+}
+
+.footer-title {
+  font-family: Georgia;
+ font-size: 16px;
+ font-weight: bold;
+ color: white;
+ padding-right: 30px;
+ border-right: 1px solid white;
+ margin-right: 20px;
+}
+
+.footer-nav a {
+  padding: 10px;
 }
